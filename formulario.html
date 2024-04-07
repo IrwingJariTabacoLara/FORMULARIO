@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="formulario.css">
+  <title>Registro de Evento</title>
+</head>
+<body>
+  <form id="registrationForm">
+    <h2>Registro de Evento</h2>
+    <div class="form-group">
+      <label for="name">Nombre Completo:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo Electronico:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Numero de Telefono:</label>
+        <input type="phone" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="tipo de entrada">Tipo de Entrada</label>
+      </div>
+<select name="Tipo de Entrada">
+    <option value="General">General</option>
+    <option value="VIP" selected>VIP</option>
+    <option value="Platinum">Platinum</option>
+  </select>
+    <div class="form-group">
+      <label for="age">Edad:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <div class="reflejo">
+    <h2>Datos Registrados:</h2>
+    <ul id="datosReflejados"></ul>
+</div>
+
+<script src="formulario.js"></script>
+</body>
+</html>
+
+</html>
